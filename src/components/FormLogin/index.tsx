@@ -32,7 +32,13 @@ export const FormLogin = () => {
         <Form.Item
           name="email"
           label="Email"
-          rules={[{ required: true, message: 'Please input your email!' }]}
+          rules={[
+            { required: true, message: 'Please input your email!' },
+            {
+              pattern: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i,
+              message: 'The input is not a valid email!',
+            },
+          ]}
         >
           <Input />
         </Form.Item>

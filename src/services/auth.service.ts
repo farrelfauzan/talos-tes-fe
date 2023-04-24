@@ -63,14 +63,12 @@ export const RegisterApi = async (payload: any, navigate: any) => {
         password: payload.password,
       },
     });
-    console.log(data);
     if (data.errors) {
       message.error('Invalid Email');
     } else {
       navigate.push('/auth/login');
     }
   } catch (error) {
-    console.log(error);
     message.error('Invalid Credential');
   }
 };

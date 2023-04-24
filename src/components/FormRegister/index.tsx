@@ -60,7 +60,6 @@ export const FormRegister = () => {
         >
           <Input />
         </Form.Item>
-
         <Form.Item
           name="firstName"
           label="First Name"
