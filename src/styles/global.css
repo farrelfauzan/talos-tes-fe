@@ -1,0 +1,42 @@
+@tailwind base;
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+.ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none;
+}
+
+.search-bar .ant-input {
+  background-color: #EBEBEB;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background: #1599a77d;
+}
+
+.ant-table-wrapper .ant-table-cell-fix-left {
+  background: #c1a6a685;
+}
+
+.ant-input-number{
+  width: 100%;
+}
+
